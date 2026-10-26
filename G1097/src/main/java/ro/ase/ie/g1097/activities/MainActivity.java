@@ -59,8 +59,7 @@ public class MainActivity extends AppCompatActivity {
                         if(o.getResultCode() == RESULT_OK)
                         {
                             Intent intent = o.getData();
-                            String response = intent.getStringExtra("response");
-                            Toast.makeText(MainActivity.this, response, Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "response", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
